@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborators</title>
+</head>
+
+<body>
+  <h1>Collaborators</h1>
+  <ul>
+    <% personArray=XQuery('for $elem in collaborators return $elem'); for (coll in personArray) { alert(coll.fullname);
+      %>
+      <li>
+        <%= coll.fullname %>
+      </li>
+      <% } %>
+  </ul>
+</body>
+
+</html>
